@@ -1,6 +1,7 @@
 body{
 background-color: beige;
-color: navy;
+color: grey;
+font-family: sans-serif;
 }
 form{
 margin: 50px auto;
