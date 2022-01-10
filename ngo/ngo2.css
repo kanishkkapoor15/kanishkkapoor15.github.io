@@ -31,4 +31,9 @@ font-family:Open Sans;
 color: #f8f8ff;
  
 }     
-
+form{
+ marign: 50px auto;
+ max-width: 500px;
+font-family:times;
+box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
