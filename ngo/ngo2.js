@@ -29,7 +29,7 @@ document.write( "YOU WILL GET AN INTREST OF:"+si);
 
 
 function getRate() {
-  var outputspan = document.getElementById("outputspan");
+  var outputspan2 = document.getElementById("outputspan");
 var roi = document.getElementById("time").value;
 
   if (roi < 1) {
@@ -37,19 +37,19 @@ var roi = document.getElementById("time").value;
      throw "MINIMUM PERIOD OF INVESTMENT IS 1 year";
      }
     catch (err) {
-     outputspan.innerHTML = "INVALID INPUT:" + err;
+     outputspan2.innerHTML = "INVALID INPUT:" + err;
 
    }} 
   else if (roi>=1 && roi<2) {
-    outputspan.innerHTML = " YOU GET 3.0% PER ANNUM";
+    outputspan2.innerHTML = " YOU GET 3.0% PER ANNUM";
   } else if (roi >=2 && roi < 3) {
-    outputspan.innerHTML = " YOU GET 3.5% PER ANNUM";
+    outputspan2.innerHTML = " YOU GET 3.5% PER ANNUM";
 
   } else if (roi >= 3 && roi <= 5) {
-    outputspan.innerHTML = " YOU GET 4.5% PER ANNUM";
+    outputspan2.innerHTML = " YOU GET 4.5% PER ANNUM";
 
   } else if (roi >= 5 && roi <= 10)  {
-    outputspan.innerHTML = " YOU GET 5.5% PER ANNUM";
+    outputspan2.innerHTML = " YOU GET 5.5% PER ANNUM";
 
   }
   else {
@@ -57,7 +57,7 @@ var roi = document.getElementById("time").value;
     throw "MAXIMUM PERIOD OF INVESTMENT IS 10 YEARS";
     }
    catch (err) {
-    outputspan.innerHTML = "INVALID INPUT:" + err;
+    outputspan2.innerHTML = "INVALID INPUT:" + err;
 }
   }
 
