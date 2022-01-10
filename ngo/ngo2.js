@@ -1,6 +1,3 @@
-
-var outputspan = document.getElementById("outputspan");
-
 function pri() {
   alert("working");
 }
@@ -32,6 +29,7 @@ document.write( "YOU WILL GET AN INTREST OF:"+si);
 
 
 function getRate() {
+  var outputspan = document.getElementById("outputspan");
 var roi = document.getElementById("time").value;
 
   if (roi < 1) {
