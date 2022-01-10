@@ -4,7 +4,7 @@ function pri() {
 function prt() {
   var p = parseFloat(document.getElementById("principal").value);
   var t=parseFloat(document.getElementById("time").value);
-  
+  var output3=document.getElementById("output2");
   if(t>=1 && t<2)
   {
    var r=3.0;
@@ -24,7 +24,8 @@ function prt() {
  
 
  si= ((p*r*t)/100);
-document.write( "YOU WILL GET AN INTREST OF:"+si);
+  output3.innerHTML="YOU WILL RECIEVE $"+si+" at the maturity!"; 
+
 }
 
 
