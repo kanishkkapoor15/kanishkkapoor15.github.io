@@ -62,7 +62,6 @@ var roi = document.getElementById("time").value;
 
   } else if (roi >= 5 && roi <= 10)  {
     outputspan2.innerHTML = " YOU GET 5.5% PER ANNUM";
-
   }
   else {
     try{
@@ -71,6 +70,5 @@ var roi = document.getElementById("time").value;
    catch (err) {
     outputspan2.innerHTML = "INVALID INPUT:" + err;
 }
-  }
- 
+  } 
 }
