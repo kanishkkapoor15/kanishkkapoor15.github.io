@@ -24,6 +24,7 @@ function prt() {
  
 
  si= ((p*r*t)/100);
+ si+=p;
   output3.innerHTML="YOU WILL RECIEVE $"+si+" at the maturity!"; 
 
 }
