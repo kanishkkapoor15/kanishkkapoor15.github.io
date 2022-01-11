@@ -7,10 +7,10 @@ function prt() {
   var output3=document.getElementById("output2");
   if(p < 100 || p > 10000000)
   { try{
-    throw "MINIMUM INVESTMEN $100 AND MAXIMUM $10000000";
+    throw "MINIMUM INVESTMENT $100 AND MAXIMUM $10000000";
   }
    catch(err){
-     output3.innerHTML= "INVALID INPUT" +err;
+     output3.innerHTML= "INVALID INPUT: " +err;
    }
   }
   else{
