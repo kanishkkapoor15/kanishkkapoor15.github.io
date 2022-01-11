@@ -71,4 +71,4 @@ var roi = document.getElementById("time").value;
     outputspan2.innerHTML = "INVALID INPUT:" + err;
 }
   } 
-}
+} 
