@@ -5,28 +5,38 @@ function prt() {
   var p = parseFloat(document.getElementById("principal").value);
   var t=parseFloat(document.getElementById("time").value);
   var output3=document.getElementById("output2");
-  if(t>=1 && t<2)
-  {
-   var r=3.0;
+  if(p < 100 || p > 10000000)
+  { try{
+    throw "MINIMUM INVESTMEN $100 AND MAXIMUM $10000000";
   }
-  else if(t>=2 && t<3)
-  {
-   var r=3.5;
+   catch(err){
+     output3.innerHTML= "INVALID INPUT" +err;
+   }
   }
+  else{
+    
+   if(t>=1 && t<2)
+   {
+    var r=3.0;
+   }
+   else if(t>=2 && t<3)
+   {
+    var r=3.5;
+   }
    else if(t>=3 && t<5)
-  {
-   var r=4.5;
-  }
+   {
+    var r=4.5;
+   }
    else if(t>=5 && t<10)
-  {
-   var r=5.5;
-  }    
+   {
+    var r=5.5;
+   }    
  
 
  si= ((p*r*t)/100);
  si+=p;
   output3.innerHTML="YOU WILL RECIEVE $"+si+" at the maturity!"; 
-
+  }
 }
 
 
