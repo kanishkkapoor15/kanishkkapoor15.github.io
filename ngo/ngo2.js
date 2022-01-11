@@ -27,7 +27,7 @@ function prt() {
    {
     var r=4.5;
    }
-   else if(t>=5 && t<10)
+   else if(t>=5 && t<=10)
    {
     var r=5.5;
    }    
